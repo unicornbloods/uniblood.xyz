@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Images - BeyondBelief</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" content="BeyondBelief shader images">
+		<link href="main.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="slideshow.js" async></script>
+		<style>
+			.BBL, .Tea {
+				display: none;
+			}
+
+			img {
+				vertical-align: middle;
+			}
+			
+			/* Slideshow container */
+			.slideshow-container {
+				max-width: 1000px;
+				position: relative;
+				margin: auto;
+			}
+			
+			/* Next & previous buttons */
+			.prev, .next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				padding: 16px;
+				margin-top: -22px;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				transition: 0.6s ease;
+				border-radius: 0 3px 3px 0;
+				user-select: none;
+			}
+			
+			/* Position the "next button" to the right */
+			.next {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+			
+			/* On hover, add a grey background color */
+			.prev:hover, .next:hover {
+				background-color: #f1f1f1;
+				color: black;
+			}
+			</style>
+	</head>
+
+	<body>
+		<!-- Navbar Generation -->
+		<div class="grid-container-nav">
+			<a href="index.html">
+				<div>
+					Home
+				</div>
+			</a> <!-- End Index -->
+			<div>
+				<div id="active">
+					Images
+				</div>
+			</div> <!-- End Images (active) -->
+			<a href="downloads.html">
+				<div>
+					Downloads
+				</div>
+			</a> <!-- End Downloads -->
+			<a href="faq.html">
+				<div>
+					FAQ
+				</div>
+			</a> <!-- End FAQ -->
+			<a href="credits.html">
+				<div>
+					Credits
+				</div>
+			</a> <!-- End Credits -->
+		</div> <!-- End grid-container-nav -->
+
+		<!-- Main body -->
+		<div class="cover">
+			<div class="panel">
+
+				<p> Note images may appear slightly blurry due to compression. </p>
+
+			</div> <!-- End Panel -->
+		</div> <!-- End Cover -->
+
+		<div class="cover">
+			<div class="panel">
+
+				<h3 style="font-size: 1.5em; margin: 0.5%;"> BeyondBelief Legacy</h3>
+
+			</div> <!-- End Panel -->
+		</div> <!-- End Cover -->
+
+
+		<div class="cover">
+			<div class="panel">
+
+				<div class="slideshow-container">
+					<div class="BBL">
+						<img src="images/BBLBridge.webp" alt="BBL Bridge" style="width:100%">
+					</div>
+
+					<div class="BBL">
+						<img src="images/BBLFerrisWheel.webp"  alt="BBL Ferris Wheel" style="width:100%">
+					</div>
+
+					<div class="BBL">
+						<img src="images/BBLCottage.webp"  alt="BBL Cottage" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+				</div>
+
+			</div> <!-- End Panel -->
+		</div> <!-- End Cover -->
+
+
+		<div class="cover">
+			<div class="panel">
+
+				<h3 style="font-size: 1.5em; margin: 0.5%;"> BeyondBelief Vanilla Reborn</h3>
+
+			</div> <!-- End Panel -->
+		</div> <!-- End Cover -->
+
+
+
+		<div class="cover">
+			<div class="panel">
+
+				<div class="slideshow-container">
+					<div class="Tea">
+						<img src="images/UnderDaSea.webp" alt="Tea UnderDaSea" style="width:100%">
+					</div>
+
+					<div class="Tea">
+						<img src="images/SpoopyNether.webp"  alt="Tea SpoopyNether" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+				</div>
+
+				</div> <!-- End Panel -->
+		</div> <!-- End Cover -->
+
+		<br><br>
+
+	</body>
+</html>

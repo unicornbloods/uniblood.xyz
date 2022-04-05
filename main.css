@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* BeyondBelief website css */
+
+/*** Light Mode Theme ***/
+:root, [data-theme="default"] {
+  --body-bg-color: #ffffff;
+  --card-bg-color: #fbf5ff;
+	--accent-color: #e43cdb;
+	--hover-accent-color: #c237bbe3;
+  --box-shadow-color: #0002;
+  --text-color: #101010;
+  --switch-on-color: #444352;
+  --switch-off-color: #ccc;
+  --toggler-color: #fff;
+}
+
+/* Dark Mode Theme */
+:root, [data-theme="dark"] {
+  --body-bg-color: #444352;
+  --card-bg-color: #545363;
+	--accent-color: #e43cdb;
+	--accent-text-color: #000;
+	--hover-accent-color: #c237bbe3;
+	--hover-accent-text-color: #000;
+  --box-shadow-color: #1114;
+  --text-color: #efefef;
+  --toggler-color: #444352;
+  --switch-on-color: #fff;
+  --switch-off-color: #ccc;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--card-bg-color);
+	box-shadow: 0 2px 10px var(--box-shadow-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-accent-color);
+}
+
+/* Main CSS */
+* {
+	box-sizing: border-box;
+}
+
+body {
+		background-color: var(--body-bg-color);
+		color: var(--text-color);
+		font-family: 'Open Sans',sans-serif;
+		margin: 0%;
+		padding: 0%;
+		min-height: 100%;
+}
+
+/* Main text formatting */
+img.MainHeader {
+	margin: 0.2% 0.2% 0.0% 0.2%;
+	width: 99%;
+	height: 20%
+}
+
+.cover {
+	display: flex;
+	justify-content: space-around;
+}
+
+.panel {
+	background-color: var(--card-bg-color);
+	margin: 1% 5% 0% 5%;
+	padding: 1.0%;
+	box-shadow: 0 2px 10px var(--box-shadow-color);
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+a:link, a:visited, a:active {
+	color: var(--text-color);
+	text-decoration: underline;
+}
+
+/* Images formatting */
+img.Img {
+	width: 95%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Nav formatting */
+.grid-container-nav {
+  display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	gap: 0px;
+	margin: 0px 10px;
+  background-color: #2bff0000;
+	box-shadow: 0 2px 10px var(--box-shadow-color);
+}
+
+.grid-container-nav div {
+	background-color: var(--card-bg-color);
+	color: var(--text-color);
+	font-size: large;
+	width: 100%;
+	height: 45px;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid-container-nav a {
+	text-decoration: none;
+}
+
+.grid-container-nav div:hover {
+	text-decoration: none;
+	background-color: var(--hover-accent-color);
+	color: var(--hover-accent-text-color);
+}
+
+#active {
+	background-color: var(--accent-color);
+	color: var(--accent-text-color);
+}

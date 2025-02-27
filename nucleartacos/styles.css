@@ -1,0 +1,31 @@
+/* Css Document */
+/* Ver 1.00.00 */
+
+body {
+    background-color: #2D2D2D;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 0px;
+    border: solid #4CAF50;
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+input[type="text"], textarea {
+    background-color: #3e3e3e;
+    color: white;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MC Shader Hub</title>
+	<meta charset="utf-8">
+	<meta name="description" content="LexManos is like the minceraft version of the antichrist.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.webp">
+
+	<style>
+	img {
+		width: 600px;
+		height: 500px;
+		border-style: hidden;
+	}
+	</style>
+
+</head>
+	<body>
+	<div id="wrapper">
+
+		<header>
+			<div id="logo"></div>
+			<h1>mincraft shader HUB!</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="https://www.curseforge.com/minecraft/customization/beyond-belief-shaders">Really cool shader mod!</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+            <p>
+                Just because out title has "hub" in it does NOT mean we approve of VILE web pages like p*rn hub.
+                <br>
+                <br>
+                <br>I linked to a cool shader mod in the link bar, (if I did that right) but I have a hard time running them on my 9400 GT (it is the EVGA one with an ENTIRE gigabyte of RAM) so I can only go off of screenshots. It looks very cool though. I will add links to others once I can afford a better 3D accelerator card. My wife said she would leave me if I spend another cent of our retirement fund on the computer right now, so that might be a while.
+                <br>
+                <br>I don't want readers getting bord, so I will put neat stories or rants here for now.
+                <br>
+                <br>Ok, so the first one is a rant because I am still under court order to not talk about what happened at the supermarket.
+            </p>
+
+			<h2>Rant 1 - Forge 1.7.10 shears code has the most ANNOYING bugs.</h2>
+
+			<p>
+				Shears should not be hard to code. Tool types already exist, so just integrate them into that system, right? Right!?!
+                <br>Well if you think that is what the forge developers did then <b>YOU ARE WRONG</b>!
+                <br>
+                <br>They did not do that at all. Look at this little shit and tell me, what do you see when you start into its <b>SOULESS</b> metal form:
+			</p>
+
+			<div class="floatcenter">
+				<img src="assets/shears.webp" alt="The freaking shears.">
+			</div>
+
+            <p>
+                If you only see an innocuous metal implement tHEN YOU NEED TO <b>READ THE BIBLE</b> (The KJV verson is good) and go to church.
+                <br>I don't even know where to start. This affront to God has and ENTIRE FOUR <b>DIFFERENT</b> things WRONG with it.
+            </p>
+
+            <h2>Shears issue one</h2>
+
+            <p>
+                When you break any block with a tool in survival mode it takes damage as Nocth (bless that man) intended.
+                <br>Shears take damage when you shear things, BUT <b>NOT</b> WHEN YOU BREAK <b>NON-SHEARABLE</b> BLOCKS!!!
+                <br>This really shouldnt be hard to do, but they SCREWED UP this SIMPLE TASK.
+                <br>Swords, even FRIKING <b>SWORDS</b> have this behavior set up correctly.
+                <br>This makes me SO mad, but there are OTHER issues too!
+            </p>
+
+            <div class="floatcenter">
+				<img src="assets/ShearingNonShearable.webp" alt="Using shears on a non-shearable.">
+                <img src="assets/ShearingShearable.webp" alt="Using shears on a shearable.">
+			</div>
+
+            <h2>Shears Issue Two</h2>
+
+            <p>
+                Shears will drop sheared items even when you are in <b>CREATIVE MODE, CO</b>ME ON GUYS, THIS IS NOT HARD TO NOTICE!
+                <br>It is like they did not even test this to see if it was working right.
+                <br>It is so easy too.
+                <br>
+                <br>Equip shears.
+                <br>
+                <br>Go into survival mode.
+                <br>
+                <br>Break a shearable block.
+                <br>Cool, it drops something!
+                <br>
+                <br>Go into creative mode.
+                <br>
+                <br>Break a shearable block.
+                <br>It drops something.
+                <br>Realize this is worng.
+                <br>Move one line of code to fix it.
+                <br>
+                <br>BUT REALIZE THEY DID NOT EVEN DO THIS!!!
+                <br>It makes me almost as mad as the first issue did!
+            </p>
+
+            <div class="floatcenter">
+				<img src="assets/ShearsInCreative.webp" alt="Using shears in creative mode.">
+			</div>
+
+            <h2>Shear Issue three</h2>
+
+            <p>
+                Ok, so this one makes me so mad that I had to take extra blood pressure meds. (I could have another heart attack if I didn't) before writing it.
+                <br>When you break a shearable block in survival mode, it should ONLY drop itself, right?
+                <br>It is what vanilla minecraft does, and with God as my witness I belive that is what it should do.
+                <br>BUT, if you install Forge into your Mindcraft 1.7.10 installation (newer versions run to slow for me) to does something different.
+                <br>
+                <br>Break a leaf block with shears.
+                <br>It drops itself.
+                <br>
+                <br>Break a leaf block with shears.
+                <br>It drops itself.
+                <br>
+                <br>Break a leaf block with shears.
+                <br>It drops itself AND A <b>SAPLING!</b>
+                <br>THIS IS WRONG, IT IS A SIN!! A SIN!!! EVIL!!
+                <br>
+                <br>It should <b>NOT</b> do this, but that is exactly what it does!
+                <br>
+                <br>It is like they did not even TEST the changes they made to shears!
+                <br>I have to stop writing about this one because my chest is hurting now.
+            </p>
+            
+            <div class="floatcenter">
+				<img src="assets/ShearingLeaves.webp" alt="Shears dropping the block AND a sapling.">
+			</div>
+
+            <h2>Shears issue Four</h2>
+
+            <p>
+                Most items that depend on random numbers use an instance of random provided by the Item class.
+                <br>Of course this is easy for me to see because I have a Java 1.4 certification from an internet class, but not everyone is so blessed.
+                <br>So the reason it provides one is because it takes time to make more, and having many makes it use more RAM (computers only have so much of this stuff)
+                <br>Of course, shears DO N<b>OT USE THE EXISTING O</b>NE and instead make a BRAND NEW ONE.
+                <br>
+                <br>Not too bad, right? Just one extra Random, right?
+                <br>
+                <br>Well...
+                <br>
+                <br>NOPE! It makes a new one EVERY TIME a shearable block is sheared and the garbage collector has to clean it up after.
+                <br>
+                <br>EVERY
+                <br>SINGLE
+                <br>TIME that
+                <br>ANY
+                <br>SHEARBLE block
+                <br>GETS SHEARED!
+                <br>
+                <br>It is bad, but at least it is not every frame, or even worse, more than one time every frame.
+                <br>I have to stop here now because I have Bible study at 5:00.
+            </p>
+            
+            <div class="floatcenter">
+				<img src="assets/ShearsNewRandom.webp" alt="Shears make a new random instance.">
+			</div>
+		</main>
+
+		<footer>Copyright Johnny 2022</footer>
+	</div>
+	</body>
+</html>

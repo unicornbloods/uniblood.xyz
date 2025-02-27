@@ -1,7 +1,10 @@
 @charset "utf-8";
-/* BeyondBelief website css */
+/*
+BeyondBelief website css
+Really just a clone of root's css but kept seperate in case I make changes
+*/
 
-/*** Light Mode Theme ***/
+/* Light Mode Theme */
 :root, [data-theme="default"] {
   --body-bg-color: #ffffff;
   --card-bg-color: #fbf5ff;
